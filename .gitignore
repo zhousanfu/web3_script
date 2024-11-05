@@ -1,0 +1,10 @@
+*.json
+env
+.env
+*.txt
+!proxies.txt
+!requirements.txt
+*.html
+!token.txt
+!userid.txt
+.DS_Store
