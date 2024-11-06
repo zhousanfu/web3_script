@@ -8,3 +8,4 @@ env
 !token.txt
 !userid.txt
 .DS_Store
+node_modules
