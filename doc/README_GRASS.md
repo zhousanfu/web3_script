@@ -1,6 +1,14 @@
- # @GetGrass-Bot
-这是一个专为小草空投第二季设计的机器人
 
+
+<!--
+ * @Author: sanford courageux_san@wechat.com
+ * @Date: 2024-11-06 22:23:42
+ * @LastEditors: sanford courageux_san@wechat.com
+ * @LastEditTime: 2024-11-07 20:36:42
+ * @FilePath: /web3_script/doc/README_GRASS.md
+ * @Description: 
+-->
+ # Node.js(2.0x) 版本 @
 ## 功能
 ✅ 支持多个 UID
 
@@ -9,11 +17,6 @@
 ## 安装步骤
 将此仓库克隆到你的本地环境：
 
- ```bash
-git clone https://github.com/ziqing888/getgrass-bot.git
-
-
- ```
 进入项目目录：
  ```bash
 cd getgrass-bot
@@ -26,7 +29,7 @@ npm install
 ## 使用说明
 获取用户 ID：
 
-登录到 GetGrass 网站: https://app.getgrass.io/dashboard
+登录到 GetGrass 网站
 
 打开浏览器开发者工具（通常按 F12 或右键选择“检查”）。
 
@@ -62,6 +65,42 @@ socks5://username:password@hostname:port
 npm start
 
 ```
-推荐代理： 
-▫️ 廉价代理 
-https://iproyal.com/?r=645571
+
+
+
+# python(1.2x)版本
+
+***
+## 代理
+示例格式：
+```
+http://host:port
+socks5://host:port
+http://user:password@host:port
+socks5://user:password@host:port
+```
+
+## 使用方法
+
+1.获取必要的的token :
+
+浏览器F2 OR grass/grass_setup.py
+
+```javascript
+copy(JSON.parse(localStorage.getItem("userId")))
+copy(JSON.parse(localStorage.getItem("accessToken")))
+```
+
+写入env文件中
+```
+GRASS_TOKEN = '***'
+CRASS_USERID = '***'
+```
+
+
+2.运行
+
+grass脚本
+```python
+grass/grass.py
+```

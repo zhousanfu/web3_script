@@ -1,36 +1,35 @@
-# web3脚本
-当前脚本:
+# Airdrop Tracker(空投任务集合)
 
-1. [Grass官网](https://app.getgrass.io/register/?referralCode=ubpgK7NNkY_fxOS) (Depin带宽挖矿)
-2. 获取代理
-3. 更多相关 @[项目集合](https://www.notion.so/135c1d6e542680d2b0adf24abbf8a519?pvs=21)
+[Notion地址](https://zhousanfu.notion.site/135c1d6e542680d2b0adf24abbf8a519?v=e9f1da59cf9d40d4b1b00608ee9a340d&pvs=4)
 
-***
-# 代理
-示例格式：
+
+# Script content(脚本内容):
+
+1. Grass/ type=Depin带宽挖矿 [grass官网](https://app.getgrass.io/register/?referralCode=ubpgK7NNkY_fxOS)
+
+    python(1.2倍) 使用方法[查看文档](./doc/README_GRASS.md#python12x版本)
+
+    node.js(2.0倍) 使用方法[查看文档](./doc/README_GRASS.md#nodejs20x-版本-)
+
+
+# Support Me (**打赏支持)
+
+if you want to support me, you can donate to my address:
+
+如果您喜欢这个项目并希望支持我，可以通过以下方式进行打赏：
+
+SOL
+
 ```
-http://host:port
-socks5://host:port
-http://user:password@host:port
-socks5://user:password@host:port
-```
-
-# 使用方法
-
-## grass
-1. 获取必要的的token :
-
-浏览器F2 OR grass/grass_setup.py
-
-```javascript
-copy(JSON.parse(localStorage.getItem("userId")))
-copy(JSON.parse(localStorage.getItem("accessToken")))
+6kBdPBHLkm4bUVXF952fYUXzGLtFqqY34ZkqcikF2sno
 ```
 
+TON
 
-2. 运行
-
-grass脚本
-```python
-grass/grass.py
 ```
+UQAE-FI5VOcm1mfPALRPTW7wrTzpgk94mDd_rL2VJmUT40cq
+```
+
+| Wechat | Alipay | USDT |
+|------|--------|------|
+| <img src="./doc/png/收款-微信.png" alt="Wechat" style="width:100px;"/> | <img src="./doc/png/收款-支付宝.png" alt="Alipay" style="width:100px;"/> | <img src="./doc/png/收款-USDT.png" alt="USDT" style="width:100px;"/> |
