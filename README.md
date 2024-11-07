@@ -12,7 +12,7 @@
     node.js(2.0倍) 使用方法[查看文档](./doc/README_GRASS.md#nodejs20x-版本-)
 
 
-# Support Me (**打赏支持)
+# Support Me (打赏支持)
 
 if you want to support me, you can donate to my address:
 
