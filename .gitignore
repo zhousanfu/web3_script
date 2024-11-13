@@ -1,0 +1,6 @@
+.env
+.DS_Store
+node_modules
+my_*.py
+my_proxies.txt
+browser_ids.json
