@@ -4,7 +4,7 @@
  * @Author: sanford courageux_san@wechat.com
  * @Date: 2024-11-09 15:03:27
  * @LastEditors: sanford courageux_san@wechat.com
- * @LastEditTime: 2024-11-13 22:57:24
+ * @LastEditTime: 2024-11-18 13:13:00
  * @FilePath: /web3_script/README.md
  * @Description: 
 -->
@@ -18,11 +18,28 @@ Grass带火热的Depin类项目脚本的集合
 
 # Script content(脚本集合内容):
 
-1. **grass**     [注册地址](https://app.getgrass.io/register/?referralCode=ubpgK7NNkY_fxOS) | 使用方法[查看文档](./Doc/README_GRASS.md#python12x版本)
-2. **gaea**    [注册地址](https://app.aigaea.net/register?ref=gaQuG9UcOICjVf) | 使用方法[查看文档](./Doc/README_GAEA.md)
-3. **dawn**  [注册地址](https://chromewebstore.google.com/detail/dawn-validator-chrome-ext/fpdkjdnhkakefebpekbdhillbhonfjjp) | 使用方法[查看文档](./Doc/README_DAWN.md)
-4. **nodepay** [注册地址](https://app.nodepay.ai/register?ref=qaUuuhtbNBSttd3) | 使用方法[查看文档](./Doc/README_NODEPAY.md)
-6. **teneo** [注册地址](https://teneo.pro/community-node) | 使用方法[查看文档](./Doc/README_TENEO.md)
+- **grass**     [注册地址](https://app.getgrass.io/register/?referralCode=ubpgK7NNkY_fxOS) | 使用方法[查看文档](./Doc/README_GRASS.md#python12x版本)
+- **gaea**    [注册地址](https://app.aigaea.net/register?ref=gaQuG9UcOICjVf) | 使用方法[查看文档](./Doc/README_GAEA.md)
+- **dawn**  [注册地址](https://chromewebstore.google.com/detail/dawn-validator-chrome-ext/fpdkjdnhkakefebpekbdhillbhonfjjp) | 使用方法[查看文档](./Doc/README_DAWN.md)
+- **nodepay** [注册地址](https://app.nodepay.ai/register?ref=qaUuuhtbNBSttd3) | 使用方法[查看文档](./Doc/README_NODEPAY.md)
+- **teneo** [注册地址](https://teneo.pro/community-node) | 使用方法[查看文档](./Doc/README_TENEO.md)
+- **pipe-network** [注册地址](https://pipecdn.app/signup?ref=ZWxldmF0ZS)
+    
+    使用方法:
+    1. 修改pipe-network/accounts.txt 填入账号密码
+    ```
+        account1:password1
+        account2:password2
+    ```
+    2. 修改pipe-network/proxie.txt 填入代理
+    ```
+        http://127.0.0.1:7890
+    ```
+    3. 运行
+    ```
+    cd pipe-network
+    python pipe_network.py
+    ```
 
 # config (你需要的配置)
 复制.env.example 重新命名为.env
