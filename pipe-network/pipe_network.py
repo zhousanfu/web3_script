@@ -3,7 +3,7 @@
 Author: sanford courageux_san@wechat.com
 Date: 2024-11-17 23:04:43
 LastEditors: sanford courageux_san@wechat.com
-LastEditTime: 2024-11-18 13:07:03
+LastEditTime: 2024-11-18 22:15:19
 FilePath: /web3_script/pipe-network/pipe_network.py
 Description: 
 '''
@@ -118,7 +118,8 @@ async def login(session: aiohttp.ClientSession, username: str, password: str, pr
     }
     
     try:
-        async with session.post(login_url, json=login_data, proxy=proxie) as response:
+        proxy = None if proxie == "None" else proxie
+        async with session.post(login_url, json=login_data, proxy=proxy) as response:
             response.raise_for_status()
             text = await response.text()
             return json.loads(text)
@@ -143,10 +144,11 @@ async def get_points(session: aiohttp.ClientSession, proxie: str) -> Optional[Di
     })
     
     try:
-        async with session.get(points_url, proxy=proxie) as response:
+        proxy = None if proxie == "None" else proxie
+        async with session.get(points_url, proxy=proxy) as response:
             response.raise_for_status()
             text = await response.text()
-            print(f"积分响应: {text}")  # 添加调试输出
+            print(f"积分响应: {text}")
             return json.loads(text)
     except Exception as e:
         logger.error(f"获取积分失败: {e}")
@@ -166,10 +168,11 @@ async def get_nodes(session: aiohttp.ClientSession, proxie: str) -> Optional[Dic
     })
     
     try:
-        async with session.get(nodes_url, proxy=proxie) as response:
+        proxy = None if proxie == "None" else proxie
+        async with session.get(nodes_url, proxy=proxy) as response:
             response.raise_for_status()
             text = await response.text()
-            print(f"节点响应: {text}")  # 添加调试输出
+            print(f"节点响应: {text}")
             return json.loads(text)
     except Exception as e:
         logger.error(f"获取节点失败: {e}")
@@ -177,7 +180,8 @@ async def get_nodes(session: aiohttp.ClientSession, proxie: str) -> Optional[Dic
 
 async def pin(session: aiohttp.ClientSession, url, proxie: str):
     try:
-        async with session.get(f'http://{url}', proxy=proxie) as response:
+        proxy = None if proxie == "None" else proxie
+        async with session.get(f'http://{url}', proxy=proxy) as response:
             response.raise_for_status()
             return "online"
     except Exception as e:
@@ -207,10 +211,11 @@ async def test_node(session: aiohttp.ClientSession, proxie: str, node_id: str, i
             "latency": latency,
             "status": status
         }
-        async with session.post(test_url, json=test_data, proxy=proxie) as response:
+        proxy = None if proxie == "None" else proxie
+        async with session.post(test_url, json=test_data, proxy=proxy) as response:
             response.raise_for_status()
             text = await response.text()
-            print(f"测试节点响应: {text}")  # 添加调试输出
+            print(f"测试节点响应: {text}")
             return json.loads(text)
     except Exception as e:
         logger.error(f"测试节点失败: {e}")
